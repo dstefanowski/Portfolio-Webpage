@@ -11,6 +11,7 @@
 html {
 	font-size: 62.5%;
 	scroll-behavior: smooth;
+	scroll-padding-top: 90px;
 }
 
 body {
@@ -38,8 +39,13 @@ h1 {
 	background-color: rgba($black-color, $alpha: 0.7);
 	z-index: 1000;
 
+	.logo {
+		width: 90px;
+		height: 90px;
+	}
+
 	.navbar-toggler {
-		// padding: 0 20px 20px 20px;
+		color: $pure-white;
 		font-size: 2.5rem;
 	}
 
@@ -48,23 +54,35 @@ h1 {
 		left: 0;
 		background-color: rgba($black-color, $alpha: 0.9);
 		position: relative;
-		color: $pure-white;
 		z-index: 100;
-		// border: 2px solid blue;
+		color: $pure-white;
+
+		a {
+		}
 	}
 
-	.nav-link::after {
-		content: "";
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		height: 3px;
-		width: 90%;
-		background-color: $main-color;
-		display: none;
-		// display: none;
+	// .nav-link::after {
+	// 	content: "";
+	// 	position: absolute;
+	// 	bottom: 0;
+	// 	height: 3px;
+	// 	width: 100px;
+	// 	background-color: $main-color;
+	// 	display: none;
+	// }
+
+	.social-media {
+		display: flex;
+		.social-icon {
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			font-size: 3rem;
+			padding: 0 20px;
+		}
 	}
 }
+
 .nav-link:hover {
 	color: $grey-color;
 }
@@ -101,9 +119,6 @@ h1 {
 		height: 100vh;
 		z-index: 1001;
 
-		.welcome-title {
-		}
-
 		.welcome-text {
 			text-align: center;
 			color: $shadow-color;
@@ -136,11 +151,23 @@ h1 {
 	.white-space {
 		position: absolute;
 		top: 0;
-		background-color: white;
+		background-color: $shadow-color;
 		width: 100vw;
 		height: 50vh;
 		z-index: 50;
 	}
+}
+
+.photos {
+	position: relative;
+	background-color: $grey-color;
+	height: 100vh;
+}
+
+.contact {
+	position: relative;
+	background-color: $main-color;
+	height: 100vh;
 }
 
 // MEDIA ---------------------------------------------------------------------
@@ -219,6 +246,13 @@ h1 {
 		font-size: 9rem;
 	}
 }
+
+@media (max-width: 991px) {
+	.navbar-brand {
+		display: none;
+	}
+}
+
 @media (min-width: 992px) {
 	h1 {
 		font-size: 4.5rem;
@@ -232,16 +266,9 @@ h1 {
 			padding-left: 50px;
 		}
 
-		// .nav-link::after {
-		// 	content: "";
-		// 	position: absolute;
-		// 	bottom: 0;
-		// 	left: 0;
-		// 	height: 3px;
-		// 	width: 90%;
-		// 	background-color: $main-color;
-		// 	// display: none;
-		// }
+		.home-link {
+			display: none;
+		}
 	}
 	.home {
 		background-image: url("../img/workspace-1280538.jpg");
@@ -262,7 +289,7 @@ h1 {
 	h1 {
 		font-size: 5rem;
 		text-transform: uppercase;
-		color: $pure-white;
+		color: $pure-white !important;
 	}
 
 	.welcome-text {

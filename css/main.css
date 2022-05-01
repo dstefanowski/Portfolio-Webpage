@@ -10,6 +10,7 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+  scroll-padding-top: 90px;
 }
 
 body {
@@ -38,7 +39,13 @@ h1 {
   z-index: 1000;
 }
 
+.navbar .logo {
+  width: 90px;
+  height: 90px;
+}
+
 .navbar .navbar-toggler {
+  color: #fff;
   font-size: 2.5rem;
 }
 
@@ -47,19 +54,26 @@ h1 {
   left: 0;
   background-color: rgba(0, 0, 0, 0.9);
   position: relative;
-  color: #fff;
   z-index: 100;
+  color: #fff;
 }
 
-.navbar .nav-link::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 3px;
-  width: 90%;
-  background-color: #e5383b;
-  display: none;
+.navbar .social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navbar .social-media .social-icon {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  font-size: 3rem;
+  padding: 0 20px;
 }
 
 .nav-link:hover {
@@ -142,10 +156,22 @@ h1 {
 .offer .white-space {
   position: absolute;
   top: 0;
-  background-color: white;
+  background-color: #beb6b6;
   width: 100vw;
   height: 50vh;
   z-index: 50;
+}
+
+.photos {
+  position: relative;
+  background-color: #545454;
+  height: 100vh;
+}
+
+.contact {
+  position: relative;
+  background-color: #e5383b;
+  height: 100vh;
 }
 
 @media (max-width: 400px) {
@@ -211,6 +237,12 @@ h1 {
   }
 }
 
+@media (max-width: 991px) {
+  .navbar-brand {
+    display: none;
+  }
+}
+
 @media (min-width: 992px) {
   h1 {
     font-size: 4.5rem;
@@ -220,6 +252,9 @@ h1 {
   .navbar .nav-link {
     background-color: transparent;
     padding-left: 50px;
+  }
+  .navbar .home-link {
+    display: none;
   }
   .home {
     background-image: url("../img/workspace-1280538.jpg");
@@ -237,7 +272,7 @@ h1 {
   h1 {
     font-size: 5rem;
     text-transform: uppercase;
-    color: #fff;
+    color: #fff !important;
   }
   .welcome-text p {
     font-size: 3rem;
