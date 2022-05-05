@@ -196,8 +196,6 @@ hr {
 				background-color: $black-color;
 				border-radius: 15px;
 				box-shadow: 7px 7px 1px $grey-color;
-				// font-size: 1.5rem;
-				// width: 400px;
 				list-style-type: none;
 
 				.red {
@@ -206,9 +204,8 @@ hr {
 
 				.cta-button {
 					background-color: $main-color;
-					// width: 150px;
-					// height: 40px;
 					margin-top: 40px;
+					border: transparent;
 					border-radius: 15px;
 					color: $pure-white;
 					transition: color 0.2s;
@@ -222,13 +219,12 @@ hr {
 				color: $black-color;
 			}
 
-			// .card2 {
+			// .card2-1 {
+			// 	display: flex;
+			// 	justify-content: center;
+			// 	align-items: center;
 			// 	background-color: $light-white;
-			// 	padding: 10px 40px;
-			// 	font-size: 1.5rem;
-			// 	// width: 400px;
 			// 	border-radius: 15px;
-			// 	box-shadow: 7px 7px 1px $grey-color;
 			// 	overflow: hidden;
 
 			// 	.carousel-item {
@@ -327,22 +323,10 @@ footer {
 			position: absolute;
 			top: 30px;
 			z-index: 500000000;
-			display: none;
+			// display: none;
 		}
 
 		.white-space {
-			position: absolute;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			flex-direction: column;
-			top: 0;
-			padding: 30px;
-			background-color: $pure-white;
-			width: 100vw;
-			// height: 100vh;
-			z-index: 50;
-
 			.offer-cards {
 				position: absolute;
 				display: flex;
@@ -355,14 +339,9 @@ footer {
 				// border: 1px solid red;
 
 				.card1 {
-					display: flex;
-					justify-content: center;
-					align-items: center;
-					flex-direction: column;
-					text-align: center;
 					padding: 30px 20px;
 					height: 80vh;
-					margin: 10px 10px;
+					margin: 70px 10px 20px 10px;
 					color: $pure-white;
 					font-size: 1.2rem;
 					background-color: $black-color;
@@ -396,32 +375,48 @@ footer {
 				}
 			}
 		}
-		.card2 {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			background-color: $light-white;
+		.card2-1 {
 			padding: 30px 20px;
 			height: 80vh;
 			margin: 10px 10px;
-			border-radius: 15px;
 			box-shadow: 3px 3px 1px $grey-color;
+			display: none;
+		}
+
+		.card2-2 {
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			flex-direction: column;
+			background-color: $pure-white;
+			padding: 30px 20px;
+			height: 80vh;
+			margin: 10px 10px;
+			box-shadow: 3px 3px 1px $grey-color;
+			border-radius: 15px;
 			overflow: hidden;
 
-			.carousel-caption {
-				margin-bottom: 30px;
-			}
+			.card2-content {
+				text-align: center;
 
-			.carousel-item {
-				// height: 600px;
+				i {
+					font-size: 4rem;
+					color: $main-color;
+					text-shadow: 1px 1px 1px $black-color;
+				}
 
-				img {
-					// height: 450px;
+				h4 {
+					font-weight: bold;
+				}
+
+				p {
+					font-size: 1.2rem;
 				}
 			}
 		}
 	}
 }
+
 @media (min-width: 400px) {
 	h1 {
 		font-size: 3rem;
@@ -443,7 +438,12 @@ footer {
 	.offer-cards {
 		flex-direction: column;
 	}
+
+	.carousel {
+		display: none;
+	}
 }
+
 @media (min-width: 576px) {
 	h1 {
 		font-size: 3.2rem;
@@ -521,6 +521,10 @@ footer {
 
 	.offer-cards {
 		flex-direction: row;
+	}
+
+	.carousel {
+		display: block;
 	}
 }
 @media (min-width: 1200px) {

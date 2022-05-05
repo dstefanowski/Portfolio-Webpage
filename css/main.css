@@ -240,6 +240,7 @@ h2 {
 .offer .white-space .offer-cards .card1 .cta-button {
   background-color: #e5383b;
   margin-top: 40px;
+  border: transparent;
   border-radius: 15px;
   color: #fff;
   -webkit-transition: color 0.2s;
@@ -353,28 +354,6 @@ footer hr {
     position: absolute;
     top: 30px;
     z-index: 500000000;
-    display: none;
-  }
-  .offer .white-space {
-    position: absolute;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    top: 0;
-    padding: 30px;
-    background-color: #fff;
-    width: 100vw;
-    z-index: 50;
   }
   .offer .white-space .offer-cards {
     position: absolute;
@@ -392,23 +371,9 @@ footer hr {
     top: 30px;
   }
   .offer .white-space .offer-cards .card1 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    text-align: center;
     padding: 30px 20px;
     height: 80vh;
-    margin: 10px 10px;
+    margin: 70px 10px 20px 10px;
     color: #fff;
     font-size: 1.2rem;
     background-color: #000;
@@ -435,27 +400,49 @@ footer hr {
   .offer .white-space .offer-cards .cta-button:hover {
     color: #000;
   }
-  .offer .card2 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    background-color: #eee;
+  .offer .card2-1 {
     padding: 30px 20px;
     height: 80vh;
     margin: 10px 10px;
-    border-radius: 15px;
     -webkit-box-shadow: 3px 3px 1px #545454;
             box-shadow: 3px 3px 1px #545454;
+    display: none;
+  }
+  .offer .card2-2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #fff;
+    padding: 30px 20px;
+    height: 80vh;
+    margin: 10px 10px;
+    -webkit-box-shadow: 3px 3px 1px #545454;
+            box-shadow: 3px 3px 1px #545454;
+    border-radius: 15px;
     overflow: hidden;
   }
-  .offer .card2 .carousel-caption {
-    margin-bottom: 30px;
+  .offer .card2-2 .card2-content {
+    text-align: center;
+  }
+  .offer .card2-2 .card2-content i {
+    font-size: 4rem;
+    color: #e5383b;
+    text-shadow: 1px 1px 1px #000;
+  }
+  .offer .card2-2 .card2-content h4 {
+    font-weight: bold;
+  }
+  .offer .card2-2 .card2-content p {
+    font-size: 1.2rem;
   }
 }
 
@@ -477,6 +464,9 @@ footer hr {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .carousel {
+    display: none;
   }
 }
 
@@ -544,6 +534,9 @@ footer hr {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+  }
+  .carousel {
+    display: block;
   }
 }
 
