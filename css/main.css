@@ -330,25 +330,11 @@ footer hr {
     font-size: 5rem;
   }
   .offer {
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    background-color: #000;
     height: 200vh;
-    z-index: 49;
-    overflow: hidden;
-    color: #000;
   }
   .offer .header {
     position: absolute;
@@ -371,7 +357,7 @@ footer hr {
     top: 30px;
   }
   .offer .white-space .offer-cards .card1 {
-    padding: 30px 20px;
+    padding: 250px 40px;
     height: 80vh;
     margin: 70px 10px 20px 10px;
     color: #fff;
@@ -422,7 +408,7 @@ footer hr {
         -ms-flex-direction: column;
             flex-direction: column;
     background-color: #fff;
-    padding: 30px 20px;
+    padding: 30px 40px;
     height: 80vh;
     margin: 10px 10px;
     -webkit-box-shadow: 3px 3px 1px #545454;
@@ -459,14 +445,108 @@ footer hr {
   .arrow {
     font-size: 7rem;
   }
-  .offer-cards {
+  .offer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    height: 200vh;
   }
-  .carousel {
+  .offer .header {
+    position: absolute;
+    top: 30px;
+    z-index: 500000000;
+  }
+  .offer .white-space .offer-cards {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    top: 30px;
+  }
+  .offer .white-space .offer-cards .card1 {
+    padding: 30px 50px;
+    height: 80vh;
+    width: 105vw;
+    margin: 70px 20px 20px 20px;
+    color: #fff;
+    font-size: 1.4rem;
+    background-color: #000;
+    border-radius: 15px;
+    -webkit-box-shadow: 3px 3px 1px #545454;
+            box-shadow: 3px 3px 1px #545454;
+    list-style-type: none;
+  }
+  .offer .white-space .offer-cards .card1 .red {
+    color: #e5383b;
+  }
+  .offer .white-space .offer-cards .card1 .cta-button {
+    background-color: #e5383b;
+    padding: 5px 15px;
+    margin-top: 40px;
+    border-radius: 15px;
+    color: #fff;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+  }
+  .offer .white-space .offer-cards .card1 .cta-button a {
+    text-decoration: none;
+  }
+  .offer .white-space .offer-cards .cta-button:hover {
+    color: #000;
+  }
+  .offer .card2-1 {
+    padding: 30px 20px;
+    height: 80vh;
+    margin: 10px 10px;
+    -webkit-box-shadow: 3px 3px 1px #545454;
+            box-shadow: 3px 3px 1px #545454;
     display: none;
+  }
+  .offer .card2-2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #fff;
+    padding: 30px 50px;
+    height: 80vh;
+    width: 105vw;
+    -webkit-box-shadow: 3px 3px 1px #545454;
+            box-shadow: 3px 3px 1px #545454;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+  .offer .card2-2 .card2-content {
+    text-align: center;
+  }
+  .offer .card2-2 .card2-content i {
+    font-size: 4rem;
+    color: #e5383b;
+    text-shadow: 1px 1px 1px #000;
+  }
+  .offer .card2-2 .card2-content h4 {
+    font-size: 1.7rem;
+    font-weight: bold;
+  }
+  .offer .card2-2 .card2-content p {
+    font-size: 1.4rem;
   }
 }
 
@@ -485,6 +565,23 @@ footer hr {
   }
 }
 
+.offer-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.offer-cards .card1,
+.offer-cards .card2-2 {
+  width: 105vw;
+}
+
 @media (min-width: 768px) {
   h1 {
     font-size: 3.5rem;
@@ -498,15 +595,41 @@ footer hr {
   .arrow {
     font-size: 9rem;
   }
+  .offer .offer-cards {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .offer .offer-cards .card1 p,
+  .offer .offer-cards .card1 li {
+    padding: 0 50px;
+    font-size: 1.7rem;
+    line-height: 35px;
+  }
+  .offer .offer-cards .card1 h3 {
+    font-size: 2.5rem;
+    padding-bottom: 30px;
+  }
+  .offer .offer-cards .card1 .cta-button {
+    background-color: #e5383b;
+    padding: 15px 25px;
+    width: 200px;
+    height: 50px;
+    font-size: 2rem;
+    margin-top: 40px;
+    border-radius: 15px;
+    color: #fff;
+  }
 }
 
-@media (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 991px) {
   .navbar-brand {
     display: none;
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) and (min-width: 992px) {
   h1 {
     font-size: 4.5rem;
     text-transform: uppercase;
@@ -529,18 +652,15 @@ footer hr {
   .home .arrow {
     font-size: 10rem;
   }
-  .offer-cards {
+  .offer .offer-cards {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  .carousel {
-    display: block;
-  }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 768px) and (min-width: 1200px) {
   h1 {
     font-size: 5rem;
     text-transform: uppercase;
@@ -555,7 +675,7 @@ footer hr {
   }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 768px) and (min-width: 1400px) {
   .home {
     background-image: url("../img/workspace-1280538.jpg");
     position: relative;
@@ -568,114 +688,116 @@ footer hr {
   }
 }
 
-/* ----------------------------------------------
+@media (min-width: 768px) {
+  /* ----------------------------------------------
  * Generated by Animista on 2022-4-30 15:52:11
  * Licensed under FreeBSD License.
  * See http://animista.net/license for more info. 
  * w: http://animista.net, t: @cssanimista
  * ---------------------------------------------- */
-@-webkit-keyframes arrow {
-  0% {
-    -webkit-transform: translateY(-45px);
-            transform: translateY(-45px);
-    -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
-    opacity: 1;
+  @-webkit-keyframes arrow {
+    0% {
+      -webkit-transform: translateY(-45px);
+              transform: translateY(-45px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+      opacity: 1;
+    }
+    24% {
+      opacity: 1;
+    }
+    40% {
+      -webkit-transform: translateY(-24px);
+              transform: translateY(-24px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    65% {
+      -webkit-transform: translateY(-12px);
+              transform: translateY(-12px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    82% {
+      -webkit-transform: translateY(-6px);
+              transform: translateY(-6px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    93% {
+      -webkit-transform: translateY(-4px);
+              transform: translateY(-4px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    25%,
+    55%,
+    75%,
+    87% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+      opacity: 1;
+    }
   }
-  24% {
-    opacity: 1;
-  }
-  40% {
-    -webkit-transform: translateY(-24px);
-            transform: translateY(-24px);
-    -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
-  }
-  65% {
-    -webkit-transform: translateY(-12px);
-            transform: translateY(-12px);
-    -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
-  }
-  82% {
-    -webkit-transform: translateY(-6px);
-            transform: translateY(-6px);
-    -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
-  }
-  93% {
-    -webkit-transform: translateY(-4px);
-            transform: translateY(-4px);
-    -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
-  }
-  25%,
-  55%,
-  75%,
-  87% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
-  }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
-    opacity: 1;
-  }
-}
-@keyframes arrow {
-  0% {
-    -webkit-transform: translateY(-45px);
-            transform: translateY(-45px);
-    -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
-    opacity: 1;
-  }
-  24% {
-    opacity: 1;
-  }
-  40% {
-    -webkit-transform: translateY(-24px);
-            transform: translateY(-24px);
-    -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
-  }
-  65% {
-    -webkit-transform: translateY(-12px);
-            transform: translateY(-12px);
-    -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
-  }
-  82% {
-    -webkit-transform: translateY(-6px);
-            transform: translateY(-6px);
-    -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
-  }
-  93% {
-    -webkit-transform: translateY(-4px);
-            transform: translateY(-4px);
-    -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
-  }
-  25%,
-  55%,
-  75%,
-  87% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
-  }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
-    opacity: 1;
+  @keyframes arrow {
+    0% {
+      -webkit-transform: translateY(-45px);
+              transform: translateY(-45px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+      opacity: 1;
+    }
+    24% {
+      opacity: 1;
+    }
+    40% {
+      -webkit-transform: translateY(-24px);
+              transform: translateY(-24px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    65% {
+      -webkit-transform: translateY(-12px);
+              transform: translateY(-12px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    82% {
+      -webkit-transform: translateY(-6px);
+              transform: translateY(-6px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    93% {
+      -webkit-transform: translateY(-4px);
+              transform: translateY(-4px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    25%,
+    55%,
+    75%,
+    87% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+      opacity: 1;
+    }
   }
 }
 /*# sourceMappingURL=main.css.map */
