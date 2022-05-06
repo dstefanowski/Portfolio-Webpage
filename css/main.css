@@ -337,7 +337,7 @@ footer hr {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: 200vh;
+    height: 190vh;
   }
   .offer .header {
     position: absolute;
@@ -453,7 +453,7 @@ footer hr {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: 200vh;
+    height: 180vh;
   }
   .offer .header {
     position: absolute;
@@ -594,6 +594,9 @@ footer hr {
   .arrow {
     font-size: 9rem;
   }
+  .offer {
+    height: 180vh;
+  }
   .offer .offer-cards {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -657,6 +660,9 @@ footer hr {
   .home .arrow {
     font-size: 10rem;
   }
+  .offer {
+    height: 175vh;
+  }
   .offer .offer-cards {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -695,7 +701,7 @@ footer hr {
     font-size: 12rem;
   }
   .offer {
-    height: 100vh;
+    height: 95vh;
   }
   .offer .white-space .offer-cards {
     position: absolute;
@@ -710,7 +716,29 @@ footer hr {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    top: 30px;
+    top: 100px;
+    padding: 0;
+  }
+  .offer .white-space .offer-cards p {
+    font-size: 1.6rem;
+  }
+  .offer .white-space .offer-cards h3 {
+    font-size: 1.8rem;
+  }
+  .offer .white-space .offer-cards li {
+    font-size: 1.6rem;
+  }
+  .offer .white-space .offer-cards .card1 {
+    height: 70vh;
+    max-width: 500px;
+    margin: 0 0 0 100px;
+    padding: 100px 30px;
+  }
+  .offer .white-space .offer-cards .card2-2 {
+    height: 70vh;
+    max-width: 500px;
+    margin: 30px 100px 30px 0;
+    padding: 0 20px;
   }
 }
 
@@ -724,6 +752,42 @@ footer hr {
     background-position: center;
     background-attachment: fixed;
     z-index: 50;
+  }
+  .offer .white-space .offer-cards {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    top: 100px;
+    padding: 0;
+  }
+  .offer .white-space .offer-cards p {
+    font-size: 1.6rem;
+  }
+  .offer .white-space .offer-cards h3 {
+    font-size: 1.8rem;
+  }
+  .offer .white-space .offer-cards li {
+    font-size: 1.6rem;
+  }
+  .offer .white-space .offer-cards .card1 {
+    height: 70vh;
+    max-width: 500px;
+    margin: 0 0 0 100px;
+    padding: 100px 30px;
+  }
+  .offer .white-space .offer-cards .card2-2 {
+    height: 70vh;
+    max-width: 500px;
+    margin: 30px 100px 30px 0;
   }
 }
 
