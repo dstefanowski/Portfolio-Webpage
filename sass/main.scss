@@ -181,6 +181,7 @@ hr {
 			display: flex;
 			justify-content: space-around;
 			align-content: center;
+			flex-direction: column;
 			// height: 120%;
 			// bottom: -60%;
 			// border: 1px solid red;
@@ -191,7 +192,7 @@ hr {
 				align-items: center;
 				flex-direction: column;
 				text-align: center;
-				padding: 10px 50px;
+				// padding: 10px 50px;
 				color: $pure-white;
 				background-color: $black-color;
 				border-radius: 15px;
@@ -444,7 +445,7 @@ footer {
 				display: flex;
 				justify-content: space-around;
 				align-content: center;
-				flex-direction: column;
+				// flex-direction: column;
 				top: 30px;
 				// height: 120%;
 				// bottom: -60%;
@@ -603,6 +604,16 @@ footer {
 					color: $pure-white;
 				}
 			}
+
+			.card2-2 {
+				h4 {
+					font-size: 2.2rem;
+				}
+
+				p {
+					font-size: 1.7rem;
+				}
+			}
 		}
 	}
 
@@ -648,7 +659,21 @@ footer {
 			.offer-cards {
 				flex-direction: row;
 
-				.card1 {
+				.card1,
+				.card2-2 {
+					padding: 50px 200px;
+
+					i {
+						font-size: 6rem;
+					}
+
+					h4 {
+						font-size: 2.2rem;
+					}
+
+					p {
+						font-size: 2rem;
+					}
 				}
 			}
 		}
@@ -669,6 +694,21 @@ footer {
 
 		.arrow {
 			font-size: 12rem;
+		}
+
+		.offer {
+			height: 100vh;
+
+			.white-space {
+				.offer-cards {
+					position: absolute;
+					display: flex;
+					justify-content: space-around;
+					align-content: center;
+					flex-direction: row;
+					top: 30px;
+				}
+			}
 		}
 	}
 	@media (min-width: 1400px) {
