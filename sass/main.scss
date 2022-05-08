@@ -48,8 +48,14 @@ hr {
 	z-index: 1000;
 
 	.logo {
-		width: 90px;
-		height: 90px;
+		width: 80px;
+		height: 80px;
+		transition: 0.2s;
+	}
+
+	.logo:hover {
+		width: 73px;
+		height: 73px;
 	}
 
 	.navbar-toggler {
@@ -100,7 +106,7 @@ hr {
 	position: relative;
 	height: 100vh;
 	overflow: hidden;
-	background-image: url("../img/workspace-1280538_640.jpg");
+	background-image: url("../img/desk-593327_640.jpg");
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
@@ -140,7 +146,7 @@ hr {
 			}
 
 			a:hover {
-				color: $shadow-color;
+				color: $light-white;
 			}
 		}
 	}
@@ -201,6 +207,12 @@ hr {
 
 				.red {
 					color: $main-color;
+					text-decoration: none;
+					transition: color 0.2s;
+				}
+
+				.red:hover {
+					color: $main-dark;
 				}
 
 				.cta-button {
@@ -220,22 +232,15 @@ hr {
 				color: $black-color;
 			}
 
-			// .card2-1 {
-			// 	display: flex;
-			// 	justify-content: center;
-			// 	align-items: center;
-			// 	background-color: $light-white;
-			// 	border-radius: 15px;
-			// 	overflow: hidden;
+			.card2-2 {
+				i {
+					transition: color 0.2s;
+				}
 
-			// 	.carousel-item {
-			// 		height: 600px;
-
-			// 		img {
-			// 			height: 450px;
-			// 		}
-			// 	}
-			// }
+				i:hover {
+					color: tomato;
+				}
+			}
 		}
 	}
 }
@@ -295,6 +300,10 @@ footer {
 		color: $pure-white;
 		text-align: center;
 		padding: 0 20px;
+	}
+
+	.navbar-brand {
+		display: none;
 	}
 
 	.welcome-text {
@@ -368,13 +377,6 @@ footer {
 				}
 			}
 		}
-		.card2-1 {
-			padding: 30px 20px;
-			height: 80vh;
-			margin: 10px 10px;
-			box-shadow: 3px 3px 1px $grey-color;
-			display: none;
-		}
 
 		.card2-2 {
 			display: flex;
@@ -415,6 +417,10 @@ footer {
 		font-size: 3rem;
 		text-transform: uppercase;
 		color: $pure-white;
+	}
+
+	.navbar-brand {
+		display: none;
 	}
 
 	.welcome-text {
@@ -485,13 +491,6 @@ footer {
 					color: $black-color;
 				}
 			}
-		}
-		.card2-1 {
-			padding: 30px 20px;
-			height: 80vh;
-			margin: 10px 10px;
-			box-shadow: 3px 3px 1px $grey-color;
-			display: none;
 		}
 
 		.card2-2 {
@@ -633,6 +632,9 @@ footer {
 		}
 
 		.navbar {
+			.navbar-brand {
+				display: block;
+			}
 			.nav-link {
 				background-color: transparent;
 				padding-left: 50px;
@@ -643,7 +645,7 @@ footer {
 			}
 		}
 		.home {
-			background-image: url("../img/workspace-1280538.jpg");
+			background-image: url("../img/desk-593327_1920.jpg");
 
 			.welcome-text {
 				p {
@@ -699,34 +701,6 @@ footer {
 			font-size: 12rem;
 		}
 
-		// .offer {
-		// 	height: 100vh;
-
-		// 	.white-space {
-		// 		.offer-cards {
-		// 			position: absolute;
-		// 			display: flex;
-		// 			justify-content: space-around;
-		// 			align-content: center;
-		// 			flex-direction: row;
-		// 			top: 70px;
-		// 			padding: 0;
-		// 			// border: 1px solid red;
-
-		// 			.card1 {
-		// 				margin: 30px 100px 0 50px;
-		// 				// border: 1px solid red;
-		// 			}
-
-		// 			.card2-2 {
-		// 				margin: 60px 50px 30px 0;
-		// 				padding: 30px 50px;
-		// 				// border: 1px solid red;
-		// 			}
-		// 		}
-		// 	}
-		// }
-
 		.offer {
 			height: 95vh;
 
@@ -773,7 +747,7 @@ footer {
 	}
 	@media (min-width: 1400px) {
 		.home {
-			background-image: url("../img/workspace-1280538.jpg");
+			background-image: url("../img/desk-593327.jpg");
 			position: relative;
 			height: 100vh;
 			overflow: hidden;

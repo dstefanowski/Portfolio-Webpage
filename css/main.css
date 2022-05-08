@@ -46,8 +46,15 @@ h2 {
 }
 
 .navbar .logo {
-  width: 90px;
-  height: 90px;
+  width: 80px;
+  height: 80px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.navbar .logo:hover {
+  width: 73px;
+  height: 73px;
 }
 
 .navbar .navbar-toggler {
@@ -94,7 +101,7 @@ h2 {
   position: relative;
   height: 100vh;
   overflow: hidden;
-  background-image: url("../img/workspace-1280538_640.jpg");
+  background-image: url("../img/desk-593327_640.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -148,7 +155,7 @@ h2 {
 }
 
 .home .welcome .arrow a:hover {
-  color: #beb6b6;
+  color: #eee;
 }
 
 .offer {
@@ -238,6 +245,13 @@ h2 {
 
 .offer .white-space .offer-cards .card1 .red {
   color: #e5383b;
+  text-decoration: none;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+.offer .white-space .offer-cards .card1 .red:hover {
+  color: #cf1b1e;
 }
 
 .offer .white-space .offer-cards .card1 .cta-button {
@@ -256,6 +270,15 @@ h2 {
 
 .offer .white-space .offer-cards .cta-button:hover {
   color: #000;
+}
+
+.offer .white-space .offer-cards .card2-2 i {
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+.offer .white-space .offer-cards .card2-2 i:hover {
+  color: tomato;
 }
 
 .photos {
@@ -324,6 +347,9 @@ footer hr {
     text-align: center;
     padding: 0 20px;
   }
+  .navbar-brand {
+    display: none;
+  }
   .welcome-text p {
     font-size: 1.5rem;
     width: 400px;
@@ -389,14 +415,6 @@ footer hr {
   .offer .white-space .offer-cards .cta-button:hover {
     color: #000;
   }
-  .offer .card2-1 {
-    padding: 30px 20px;
-    height: 80vh;
-    margin: 10px 10px;
-    -webkit-box-shadow: 3px 3px 1px #545454;
-            box-shadow: 3px 3px 1px #545454;
-    display: none;
-  }
   .offer .card2-2 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -440,6 +458,9 @@ footer hr {
     font-size: 3rem;
     text-transform: uppercase;
     color: #fff;
+  }
+  .navbar-brand {
+    display: none;
   }
   .welcome-text p {
     font-size: 1.7rem;
@@ -501,14 +522,6 @@ footer hr {
   }
   .offer .white-space .offer-cards .cta-button:hover {
     color: #000;
-  }
-  .offer .card2-1 {
-    padding: 30px 20px;
-    height: 80vh;
-    margin: 10px 10px;
-    -webkit-box-shadow: 3px 3px 1px #545454;
-            box-shadow: 3px 3px 1px #545454;
-    display: none;
   }
   .offer .card2-2 {
     display: -webkit-box;
@@ -643,6 +656,9 @@ footer hr {
     text-transform: uppercase;
     color: #fff;
   }
+  .navbar .navbar-brand {
+    display: block;
+  }
   .navbar .nav-link {
     background-color: transparent;
     padding-left: 50px;
@@ -651,7 +667,7 @@ footer hr {
     display: none;
   }
   .home {
-    background-image: url("../img/workspace-1280538.jpg");
+    background-image: url("../img/desk-593327_1920.jpg");
   }
   .home .welcome-text p {
     font-size: 2.7rem;
@@ -744,7 +760,7 @@ footer hr {
 
 @media (min-width: 768px) and (min-width: 1400px) {
   .home {
-    background-image: url("../img/workspace-1280538.jpg");
+    background-image: url("../img/desk-593327.jpg");
     position: relative;
     height: 100vh;
     overflow: hidden;
