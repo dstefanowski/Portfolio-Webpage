@@ -283,15 +283,6 @@ h2 {
 
 .photos {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   height: 100vh;
   z-index: 49;
   overflow: hidden;
@@ -313,24 +304,18 @@ h2 {
 
 .photos .header {
   position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   top: 30px;
   z-index: 500000000;
 }
 
-.photos .carousel {
-  position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 60vh;
-  width: 60vw;
-  z-index: 1001;
+.photos .carousel .pic-carousel {
+  top: 100px;
+  height: 80vh;
+  z-index: 1000001;
+  overflow: hidden;
 }
 
 .contact {
