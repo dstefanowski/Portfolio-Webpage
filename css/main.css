@@ -330,6 +330,7 @@ h2 {
 }
 
 .photos .gallery .gallery-card {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -337,14 +338,34 @@ h2 {
   margin-bottom: 15px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  border-radius: 15px;
+  overflow: hidden;
 }
 
 .photos .gallery .gallery-card img {
   width: 300px;
 }
 
+.photos .gallery .gallery-card .caption {
+  font-size: 1.5rem;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 10px;
+  display: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+}
+
 .photos .gallery .gallery-card:hover {
-  width: 51%;
+  width: 46%;
+}
+
+.photos .gallery .gallery-card:hover .caption {
+  display: block;
 }
 
 .contact {
