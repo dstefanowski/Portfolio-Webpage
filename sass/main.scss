@@ -31,8 +31,6 @@ h2 {
 	text-transform: uppercase;
 	color: $black-color;
 }
-hr {
-}
 
 .navbar {
 	position: fixed;
@@ -298,6 +296,7 @@ hr {
 		flex-wrap: wrap;
 		z-index: 9999999;
 		margin: 30px 0;
+		transition: 0.5s;
 
 		.gallery-card {
 			position: relative;
@@ -310,26 +309,49 @@ hr {
 
 			img {
 				width: 300px;
+				overflow: hidden;
+			}
+
+			.mask {
+				position: absolute;
+				bottom: 0;
+				height: 0;
+				width: 100%;
+				transition: 0.3s;
+				background-color: rgba($light-white, 0.7);
+
+				.text {
+					position: absolute;
+					left: 50%;
+					transform: translateX(-50%);
+					bottom: -80px;
+					font-size: 3rem;
+					color: $grey-color;
+					transition: 0.4s;
+				}
 			}
 
 			.caption {
 				font-size: 1.5rem;
 				position: absolute;
-				left: 50%;
-				transform: translateX(-50%);
-				bottom: 10px;
-				display: none;
-				transition: 0.5s;
-				transition-delay: 0.5s;
+				// left: 50%;
+				// transform: translateX(-50%);
+				bottom: 0;
+				height: 0;
+				width: 100%;
+				background-color: rgba($black-color, $alpha: 0.9);
+				transition: 0.4s;
+				z-index: 9;
 			}
 		}
 
 		.gallery-card:hover {
-			width: 46%;
+			cursor: pointer;
+			width: 29%;
 		}
 
 		.gallery-card:hover .caption {
-			display: block;
+			height: 100px;
 		}
 	}
 }
@@ -735,9 +757,23 @@ footer {
 	.photos {
 		.gallery {
 			.gallery-card {
-				width: 48%;
-				img {
-				}
+				width: 45%;
+			}
+
+			.gallery-card:hover {
+				cursor: pointer;
+				width: 44%;
+			}
+
+			.gallery-card:hover .caption {
+				height: 70px;
+			}
+
+			.gallery-card:hover .mask {
+				height: 100%;
+			}
+			.gallery-card:hover .text {
+				bottom: 150px;
 			}
 		}
 	}
@@ -919,6 +955,29 @@ footer {
 					margin: 30px 100px 30px 0;
 					// border: 1px solid red;
 				}
+			}
+		}
+	}
+
+	.photos {
+		.gallery {
+			.gallery-card {
+				width: 30%;
+			}
+			.gallery-card:hover {
+				cursor: pointer;
+				width: 29%;
+			}
+
+			.gallery-card:hover .caption {
+				height: 70px;
+			}
+
+			.gallery-card:hover .mask {
+				height: 100%;
+			}
+			.gallery-card:hover .text {
+				bottom: 170px;
 			}
 		}
 	}
