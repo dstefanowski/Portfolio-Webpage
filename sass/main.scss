@@ -325,7 +325,7 @@ h2 {
 				height: 0;
 				width: 100%;
 				transition: 0.3s;
-				background-color: rgba($light-white, 0.7);
+				background-color: rgba($pure-white, 0.8);
 
 				.text {
 					position: absolute;
@@ -333,7 +333,7 @@ h2 {
 					transform: translateX(-50%);
 					bottom: -80px;
 					font-size: 6rem;
-					color: $pure-white;
+					color: $half-black;
 					transition: 0.4s;
 				}
 			}
