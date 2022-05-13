@@ -286,14 +286,10 @@ h2 {
   z-index: 49;
   overflow: hidden;
   color: #000;
-  background-image: url(../img/workspace-1280538.jpg);
+  background-image: url(../img/pexels-jeffrey-czum-2733955640.jpg);
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
-}
-
-.photos h2 {
-  color: #fff;
 }
 
 .photos .bgc-shadow {
@@ -301,15 +297,8 @@ h2 {
   height: 100%;
   width: 100vw;
   top: 0;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.7);
   z-index: 50;
-}
-
-.photos .header {
-  text-align: center;
-  margin-top: 30px;
-  color: #fff;
-  z-index: 500000000;
 }
 
 .photos .gallery {
@@ -344,6 +333,12 @@ h2 {
   overflow: hidden;
 }
 
+.photos .gallery .gallery-card .picture {
+  padding: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
 .photos .gallery .gallery-card img {
   width: 300px;
   overflow: hidden;
@@ -365,8 +360,8 @@ h2 {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   bottom: -80px;
-  font-size: 3rem;
-  color: #545454;
+  font-size: 6rem;
+  color: #fff;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -376,7 +371,7 @@ h2 {
   position: absolute;
   bottom: 0;
   height: 0;
-  width: 100%;
+  width: 110%;
   background-color: rgba(0, 0, 0, 0.9);
   -webkit-transition: 0.4s;
   transition: 0.4s;
@@ -811,6 +806,9 @@ footer hr {
   .offer .offer-cards .card2-2 p {
     font-size: 2rem;
   }
+  .photos {
+    background-image: url(../img/pexels-jeffrey-czum-27339551920.jpg);
+  }
 }
 
 @media (min-width: 1200px) {
@@ -930,6 +928,9 @@ footer hr {
   }
   .photos .gallery .gallery-card:hover .text {
     bottom: 170px;
+  }
+  .photos .gallery .gallery-card:hover .picture {
+    margin: -40px;
   }
 }
 
