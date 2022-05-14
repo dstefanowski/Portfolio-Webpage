@@ -197,6 +197,8 @@ h2 {
 			// height: 120%;
 			// bottom: -60%;
 			// border: 1px solid red;
+			list-style-type: none;
+			overflow: hidden;
 
 			.card1 {
 				display: flex;
@@ -209,7 +211,11 @@ h2 {
 				background-color: $black-color;
 				border-radius: 15px;
 				box-shadow: 7px 7px 1px $grey-color;
-				list-style-type: none;
+				overflow: hidden;
+
+				ul {
+					list-style-type: none;
+				}
 
 				.red {
 					color: $main-color;
@@ -223,7 +229,7 @@ h2 {
 
 				.cta-button {
 					background-color: $main-color;
-					margin-top: 40px;
+					margin-top: 20px;
 					border: transparent;
 					border-radius: 15px;
 					color: $pure-white;
@@ -239,6 +245,7 @@ h2 {
 			}
 
 			.card2-2 {
+				// overflow: auto;
 				i {
 					transition: color 0.2s;
 				}
@@ -352,7 +359,7 @@ h2 {
 
 		.gallery-card:hover {
 			cursor: pointer;
-			width: 29%;
+			// width: 29%;
 		}
 
 		.gallery-card:hover .caption {
@@ -447,6 +454,8 @@ footer {
 				// height: 120%;
 				// bottom: -60%;
 				// border: 1px solid red;
+				list-style-type: none;
+				overflow: hidden;
 
 				.card1 {
 					padding: 250px 40px;
@@ -461,6 +470,7 @@ footer {
 					// width: 400px;
 					width: 105vw;
 					list-style-type: none;
+					overflow: hidden;
 
 					.red {
 						color: $main-color;
@@ -471,7 +481,7 @@ footer {
 						// width: 150px;
 						// height: 40px;
 						padding: 5px 15px;
-						margin-top: 40px;
+						margin-top: 20px;
 						border-radius: 15px;
 						color: $pure-white;
 						transition: color 0.2s;
@@ -561,21 +571,9 @@ footer {
 				display: flex;
 				justify-content: center;
 				align-items: center;
-				// flex-direction: column;
 				top: 30px;
-				// height: 120%;
-				// bottom: -60%;
-				// border: 1px solid red;
-
-				// .offer-cards {
-				// 	display: flex;
-				// 	justify-content: center;
-				// 	align-items: center;
-				// 	.card1,
-				// 	.card2-2 {
-				// 		width: 105vw;
-				// 	}
-				// }
+				list-style-type: none;
+				overflow: hidden;
 
 				.card1 {
 					padding: 30px 50px;
@@ -587,8 +585,11 @@ footer {
 					background-color: $black-color;
 					border-radius: 15px;
 					box-shadow: 3px 3px 1px $grey-color;
+					overflow: hidden;
 
-					list-style-type: none;
+					ul {
+						list-style-type: none;
+					}
 
 					.red {
 						color: $main-color;
@@ -597,7 +598,7 @@ footer {
 					.cta-button {
 						background-color: $main-color;
 						padding: 5px 15px;
-						margin-top: 40px;
+						margin-top: 20px;
 						border-radius: 15px;
 						color: $pure-white;
 						transition: color 0.2s;
@@ -682,9 +683,17 @@ footer {
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		list-style-type: none;
+		overflow: hidden;
+
 		.card1,
 		.card2-2 {
 			width: 105vw;
+			overflow: hidden;
+
+			ul {
+				list-style-type: none;
+			}
 		}
 	}
 
@@ -722,17 +731,24 @@ footer {
 
 		.offer-cards {
 			flex-direction: row;
+			list-style-type: none;
+			overflow: hidden;
 
 			.card1 {
+				ul {
+					list-style-type: none;
+				}
+
 				p,
 				li {
 					padding: 0 50px;
 					font-size: 1.7rem;
 					line-height: 35px;
 				}
+
 				h3 {
 					font-size: 2.5rem;
-					padding-bottom: 30px;
+					padding-bottom: 10px;
 				}
 
 				.cta-button {
@@ -741,7 +757,7 @@ footer {
 					width: 200px;
 					height: 50px;
 					font-size: 2rem;
-					margin-top: 40px;
+					margin-top: 20px;
 					border-radius: 15px;
 					color: $pure-white;
 				}
@@ -767,7 +783,7 @@ footer {
 
 			.gallery-card:hover {
 				cursor: pointer;
-				width: 44%;
+				// width: 44%;
 			}
 
 			.gallery-card:hover .caption {
@@ -829,10 +845,17 @@ footer {
 		height: 175vh;
 		.offer-cards {
 			flex-direction: row;
+			list-style-type: none;
+			overflow: hidden;
 
 			.card1,
 			.card2-2 {
 				padding: 50px 200px;
+				overflow: hidden;
+
+				ul {
+					list-style-type: none;
+				}
 
 				i {
 					font-size: 6rem;
@@ -883,6 +906,8 @@ footer {
 				flex-direction: row;
 				top: 100px;
 				padding: 0;
+				list-style-type: none;
+				overflow: hidden;
 				// border: 1px solid red;
 				p {
 					font-size: 1.6rem;
@@ -901,7 +926,11 @@ footer {
 					max-width: 500px;
 					margin: 0 0 0 100px;
 					padding: 100px 30px;
-					// border: 1px solid red;
+					overflow: hidden;
+
+					ul {
+						list-style-type: none;
+					}
 				}
 
 				.card2-2 {
@@ -937,6 +966,7 @@ footer {
 				flex-direction: row;
 				top: 100px;
 				padding: 0;
+				overflow: hidden;
 				// border: 1px solid red;
 				p {
 					font-size: 1.6rem;
@@ -954,8 +984,12 @@ footer {
 					height: 70vh;
 					max-width: 500px;
 					margin: 0 0 0 100px;
-					padding: 100px 30px;
-					// border: 1px solid red;
+					padding: 50px 30px 15px 30px;
+					overflow: hidden;
+
+					ul {
+						list-style-type: none;
+					}
 				}
 
 				.card2-2 {
@@ -975,7 +1009,7 @@ footer {
 			}
 			.gallery-card:hover {
 				cursor: pointer;
-				width: 29%;
+				// width: 29%;
 			}
 
 			.gallery-card:hover .caption {
