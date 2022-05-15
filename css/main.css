@@ -90,7 +90,7 @@ h2 {
 }
 
 .nav-link:hover {
-  color: #545454;
+  color: #fff !important;
 }
 
 .nav-link:hover::after {
@@ -403,7 +403,7 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 50px 0;
+  padding: 50px 0 15px 0;
   z-index: 49;
   overflow: hidden;
   color: #000;
@@ -445,15 +445,33 @@ h2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border: 10px solid #161414;
+  border: 5px solid #161414;
   border-radius: 15px;
   background-color: #fff;
 }
 
+.contact .wrapper .email-form p {
+  margin-top: 15px;
+  font-size: 2.5rem;
+}
+
+.contact .wrapper .email-form h4 {
+  color: #161414;
+}
+
 .contact .wrapper .email-form input {
   padding: 5px;
-  margin: 20px;
+  margin: 15px;
   border-radius: 5px;
+  border: 2px solid #beb6b6;
+  background-color: #eae8e8;
+}
+
+.contact .wrapper .email-form #message {
+  resize: none;
+  border-radius: 5px;
+  border: 2px solid #beb6b6;
+  background-color: #eae8e8;
 }
 
 .contact .wrapper .email-form button {
@@ -501,12 +519,12 @@ footer .footer-media-icons {
 }
 
 footer .footer-media-icons .social-icon {
-  -webkit-transform: color 1s;
-          transform: color 1s;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
 }
 
-footer .footer-media-icons .social-icon:hover {
-  color: #fff;
+footer .footer-media-icons .social-icon .social-icon:hover {
+  color: #fff !important;
 }
 
 @media (max-width: 400px) {
@@ -633,6 +651,10 @@ footer .footer-media-icons .social-icon:hover {
   }
   .contact .wrapper .email-form {
     font-size: 1.5rem;
+  }
+  .contact .wrapper .email-form #message {
+    margin: 10px;
+    padding: 15px;
   }
   footer .footer-media-icons {
     top: 15px;
@@ -764,12 +786,16 @@ footer .footer-media-icons .social-icon:hover {
     width: 100%;
   }
   .contact .wrapper {
-    width: 100%;
+    width: 120%;
   }
   .contact .wrapper .email-form {
     font-size: 1.5rem;
     width: 100%;
     padding: 10px;
+  }
+  .contact .wrapper .email-form #message {
+    margin: 10px;
+    padding: 15px;
   }
   footer .footer-media-icons {
     top: 15px;
@@ -867,6 +893,9 @@ footer .footer-media-icons .social-icon:hover {
     border-radius: 15px;
     color: #fff;
   }
+  .offer .offer-cards .card2-2 i {
+    font-size: 6rem;
+  }
   .offer .offer-cards .card2-2 h4 {
     font-size: 2.2rem;
   }
@@ -889,10 +918,10 @@ footer .footer-media-icons .social-icon:hover {
     bottom: 150px;
   }
   .contact .wrapper {
-    width: 70%;
+    width: 90%;
   }
   .contact .wrapper .email-form {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     padding: 30px 0;
   }
   footer .footer-media-icons {
@@ -962,7 +991,7 @@ footer .footer-media-icons .social-icon:hover {
   }
   .offer .offer-cards .card1 i,
   .offer .offer-cards .card2-2 i {
-    font-size: 6rem;
+    font-size: 8rem;
   }
   .offer .offer-cards .card1 h4,
   .offer .offer-cards .card2-2 h4 {
@@ -976,11 +1005,15 @@ footer .footer-media-icons .social-icon:hover {
     background-image: url(../img/pexels-jeffrey-czum-27339551920.jpg);
   }
   .contact .wrapper {
-    width: 60%;
+    width: 80%;
   }
   .contact .wrapper .email-form {
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding: 30px 0;
+  }
+  .contact .wrapper .email-form #message {
+    margin: 10px;
+    padding: 15px;
   }
   footer .footer-media-icons {
     top: 35px;
@@ -1053,6 +1086,9 @@ footer .footer-media-icons .social-icon:hover {
     max-width: 500px;
     margin: 30px 100px 30px 0;
     padding: 0 20px;
+  }
+  .offer .white-space .offer-cards .card2-2 i {
+    font-size: 6rem;
   }
   .contact .wrapper {
     width: 60%;

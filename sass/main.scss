@@ -70,18 +70,6 @@ h2 {
 		color: $pure-white;
 	}
 
-	// .sec-nav::after {
-	// 	content: "";
-	// 	position: absolute;
-	// 	bottom: 0;
-	// 	height: 3px;
-	// 	width: 60px;
-	// 	left: 20%;
-	// 	// transform: scaleX(-50%);
-	// 	background-color: $main-color;
-	// 	display: none;
-	// }
-
 	.social-media {
 		display: flex;
 		.social-icon {
@@ -95,7 +83,7 @@ h2 {
 }
 
 .nav-link:hover {
-	color: $grey-color;
+	color: $pure-white !important;
 }
 
 .nav-link:hover::after {
@@ -375,7 +363,7 @@ h2 {
 	justify-content: center;
 	align-items: center;
 	// height: 80vh;
-	padding: 50px 0;
+	padding: 50px 0 15px 0;
 	z-index: 49;
 	overflow: hidden;
 	color: $black-color;
@@ -401,15 +389,35 @@ h2 {
 			justify-content: center;
 			align-items: center;
 			flex-direction: column;
-			border: 10px solid $half-black;
+			border: 5px solid $half-black;
 			border-radius: 15px;
-			background-color: #fff;
+			background-color: $pure-white;
+
+			p {
+				margin-top: 15px;
+				font-size: 2.5rem;
+			}
+
+			h4 {
+				color: $half-black;
+			}
 
 			input {
 				// font-size: 3rem;
 				padding: 5px;
-				margin: 20px;
+				margin: 15px;
 				border-radius: 5px;
+				border: 2px solid $shadow-color;
+				background-color: $light-white;
+			}
+
+			#message {
+				// padding: 15px;
+				// border: 2px solid black;
+				resize: none;
+				border-radius: 5px;
+				border: 2px solid $shadow-color;
+				background-color: $light-white;
 			}
 
 			button {
@@ -452,11 +460,11 @@ footer {
 		position: absolute;
 
 		.social-icon {
-			transform: color 1s;
-		}
+			transition: color 0.2s;
 
-		.social-icon:hover {
-			color: $pure-white;
+			.social-icon:hover {
+				color: $pure-white !important;
+			}
 		}
 	}
 }
@@ -598,6 +606,11 @@ footer {
 
 			.email-form {
 				font-size: 1.5rem;
+
+				#message {
+					margin: 10px;
+					padding: 15px;
+				}
 			}
 		}
 	}
@@ -746,12 +759,17 @@ footer {
 
 	.contact {
 		.wrapper {
-			width: 100%;
+			width: 120%;
 
 			.email-form {
 				font-size: 1.5rem;
 				width: 100%;
 				padding: 10px;
+
+				#message {
+					margin: 10px;
+					padding: 15px;
+				}
 			}
 		}
 	}
@@ -873,6 +891,10 @@ footer {
 			}
 
 			.card2-2 {
+				i {
+					font-size: 6rem;
+				}
+
 				h4 {
 					font-size: 2.2rem;
 				}
@@ -910,10 +932,10 @@ footer {
 
 	.contact {
 		.wrapper {
-			width: 70%;
+			width: 90%;
 
 			.email-form {
-				font-size: 1.7rem;
+				font-size: 1.5rem;
 				// width: 100%;
 				padding: 30px 0;
 			}
@@ -993,7 +1015,7 @@ footer {
 				}
 
 				i {
-					font-size: 6rem;
+					font-size: 8rem;
 				}
 
 				h4 {
@@ -1013,12 +1035,17 @@ footer {
 
 	.contact {
 		.wrapper {
-			width: 60%;
+			width: 80%;
 
 			.email-form {
-				font-size: 2rem;
+				font-size: 1.5rem;
 				// width: 100%;
 				padding: 30px 0;
+
+				#message {
+					margin: 10px;
+					padding: 15px;
+				}
 			}
 		}
 	}
@@ -1100,6 +1127,10 @@ footer {
 					margin: 30px 100px 30px 0;
 					padding: 0 20px;
 					// border: 1px solid red;
+
+					i {
+						font-size: 6rem;
+					}
 				}
 			}
 		}
