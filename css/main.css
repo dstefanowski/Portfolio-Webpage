@@ -459,7 +459,7 @@ h2 {
 .contact .wrapper .email-form button {
   margin: 20px;
   padding: 10px 20px;
-  color: #000;
+  color: #fff;
   background-color: #e5383b;
   border: none;
   border-radius: 15px;
@@ -468,8 +468,7 @@ h2 {
 }
 
 .contact .wrapper .email-form button:hover {
-  color: #fff;
-  background-color: #cf1b1e;
+  color: #000;
 }
 
 footer {

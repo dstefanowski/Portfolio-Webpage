@@ -416,7 +416,7 @@ h2 {
 				// font-size: 3rem;
 				margin: 20px;
 				padding: 10px 20px;
-				color: $black-color;
+				color: $pure-white;
 				background-color: $main-color;
 				border: none;
 				border-radius: 15px;
@@ -424,8 +424,8 @@ h2 {
 			}
 
 			button:hover {
-				color: $pure-white;
-				background-color: $main-dark;
+				color: $black-color;
+				// background-color: $main-dark;
 			}
 		}
 	}
