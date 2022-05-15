@@ -500,6 +500,15 @@ footer .footer-media-icons {
   position: absolute;
 }
 
+footer .footer-media-icons .social-icon {
+  -webkit-transform: color 1s;
+          transform: color 1s;
+}
+
+footer .footer-media-icons .social-icon:hover {
+  color: #fff;
+}
+
 @media (max-width: 400px) {
   h1 {
     font-size: 2.8rem;

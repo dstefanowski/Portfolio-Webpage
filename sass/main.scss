@@ -450,8 +450,15 @@ footer {
 
 	.footer-media-icons {
 		position: absolute;
-	}
 
+		.social-icon {
+			transform: color 1s;
+		}
+
+		.social-icon:hover {
+			color: $pure-white;
+		}
+	}
 }
 
 // MEDIA ---------------------------------------------------------------------
@@ -1029,7 +1036,6 @@ footer {
 			margin-top: 40px;
 		}
 	}
-
 }
 @media (min-width: 1200px) {
 	h1 {
