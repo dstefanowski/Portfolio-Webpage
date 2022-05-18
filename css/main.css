@@ -266,6 +266,8 @@ h2 {
   border: transparent;
   border-radius: 15px;
   color: #fff;
+  -webkit-box-shadow: 0 1px 5px #545454;
+          box-shadow: 0 1px 5px #545454;
   -webkit-transition: color 0.2s;
   transition: color 0.2s;
 }
@@ -331,7 +333,7 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #fff;
+  background-color: transparent;
   margin-bottom: 15px;
   -webkit-transition: 0.5s;
   transition: 0.5s;

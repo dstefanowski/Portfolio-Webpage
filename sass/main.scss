@@ -220,6 +220,7 @@ h2 {
 					border: transparent;
 					border-radius: 15px;
 					color: $pure-white;
+					box-shadow: 0 1px 5px $grey-color;
 					transition: color 0.2s;
 
 					a {
@@ -297,7 +298,7 @@ h2 {
 		.gallery-card {
 			position: relative;
 			display: flex;
-			background-color: $pure-white;
+			background-color: transparent;
 			margin-bottom: 15px;
 			transition: 0.5s;
 			border-radius: 15px;
