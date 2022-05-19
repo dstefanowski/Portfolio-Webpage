@@ -239,9 +239,9 @@ h2 {
   text-align: center;
   color: #fff;
   background-color: #000;
-  border-radius: 15px;
-  -webkit-box-shadow: 7px 7px 1px #545454;
-          box-shadow: 7px 7px 1px #545454;
+  border-radius: 8px;
+  -webkit-box-shadow: 4px 4px 3px rgba(84, 84, 84, 0.4);
+          box-shadow: 4px 4px 3px rgba(84, 84, 84, 0.4);
   overflow: hidden;
 }
 
@@ -280,6 +280,11 @@ h2 {
   color: #000;
 }
 
+.offer .white-space .offer-cards .card2-2 {
+  -webkit-box-shadow: 4px 4px 3px rgba(84, 84, 84, 0.4);
+          box-shadow: 4px 4px 3px rgba(84, 84, 84, 0.4);
+}
+
 .offer .white-space .offer-cards .card2-2 i {
   -webkit-transition: color 0.2s;
   transition: color 0.2s;
@@ -294,10 +299,7 @@ h2 {
   z-index: 49;
   overflow: hidden;
   color: #000;
-  background-image: url(../img/pexels-jeffrey-czum-2733955640.jpg);
-  background-position: center;
-  background-attachment: fixed;
-  background-size: cover;
+  background-color: #161414;
 }
 
 .photos .bgc-shadow {
@@ -337,7 +339,7 @@ h2 {
   margin-bottom: 15px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  border-radius: 15px;
+  border-radius: 8px;
   overflow: hidden;
 }
 
@@ -372,18 +374,6 @@ h2 {
   color: #161414;
   -webkit-transition: 0.4s;
   transition: 0.4s;
-}
-
-.photos .gallery .gallery-card .caption {
-  font-size: 1.5rem;
-  position: absolute;
-  bottom: 0;
-  height: 0;
-  width: 110%;
-  background-color: rgba(0, 0, 0, 0.9);
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-  z-index: 9;
 }
 
 .photos .gallery .gallery-card:hover {
@@ -507,7 +497,7 @@ footer {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 20vh;
-  color: #fff;
+  color: #545454;
   background-color: #000;
 }
 
@@ -531,7 +521,7 @@ footer .footer-media-icons .social-icon .social-icon:hover {
 
 @media (max-width: 400px) {
   h1 {
-    font-size: 2.8rem;
+    font-size: 2.2rem;
     text-transform: uppercase;
     color: #fff;
     text-align: center;
@@ -672,7 +662,7 @@ footer .footer-media-icons .social-icon .social-icon:hover {
 
 @media (min-width: 400px) {
   h1 {
-    font-size: 3rem;
+    font-size: 2.4rem;
     text-transform: uppercase;
     color: #fff;
   }
@@ -721,9 +711,9 @@ footer .footer-media-icons .social-icon .social-icon:hover {
     color: #fff;
     font-size: 1.4rem;
     background-color: #000;
-    border-radius: 15px;
-    -webkit-box-shadow: 3px 3px 1px #545454;
-            box-shadow: 3px 3px 1px #545454;
+    border-radius: 8px;
+    -webkit-box-shadow: 4px 4px 3px rgba(84, 84, 84, 0.4);
+            box-shadow: 4px 4px 3px rgba(84, 84, 84, 0.4);
     overflow: hidden;
   }
   .offer .white-space .offer-cards .card1 ul {
@@ -764,9 +754,9 @@ footer .footer-media-icons .social-icon .social-icon:hover {
     padding: 30px 50px;
     height: 80vh;
     width: 105vw;
-    -webkit-box-shadow: 3px 3px 1px #545454;
-            box-shadow: 3px 3px 1px #545454;
-    border-radius: 15px;
+    -webkit-box-shadow: 4px 4px 3px rgba(84, 84, 84, 0.4);
+            box-shadow: 4px 4px 3px rgba(84, 84, 84, 0.4);
+    border-radius: 8px;
     overflow: hidden;
   }
   .offer .card2-2 .card2-content {
@@ -813,7 +803,7 @@ footer .footer-media-icons .social-icon .social-icon:hover {
 
 @media (min-width: 576px) {
   h1 {
-    font-size: 3.2rem;
+    font-size: 2.8rem;
     text-transform: uppercase;
     color: #fff;
   }
@@ -850,13 +840,12 @@ footer .footer-media-icons .social-icon .social-icon:hover {
 
 @media (min-width: 768px) {
   h1 {
-    font-size: 3.5rem;
+    font-size: 3rem;
     text-transform: uppercase;
     color: #fff;
   }
   .welcome-text p {
     font-size: 2rem;
-    width: 500px;
   }
   .arrow {
     font-size: 9rem;
@@ -947,7 +936,7 @@ footer .footer-media-icons .social-icon .social-icon:hover {
 
 @media (min-width: 992px) {
   h1 {
-    font-size: 4.5rem;
+    font-size: 4rem;
     text-transform: uppercase;
     color: #fff;
   }
@@ -965,7 +954,7 @@ footer .footer-media-icons .social-icon .social-icon:hover {
     background-image: url("../img/laptop-5842509_1920.jpg");
   }
   .home .welcome-text p {
-    font-size: 2.7rem;
+    font-size: 2.5rem;
     width: 600px;
   }
   .home .arrow {
@@ -1003,9 +992,6 @@ footer .footer-media-icons .social-icon .social-icon:hover {
   .offer .offer-cards .card2-2 p {
     font-size: 2rem;
   }
-  .photos {
-    background-image: url(../img/pexels-jeffrey-czum-27339551920.jpg);
-  }
   .contact .wrapper {
     width: 80%;
   }
@@ -1032,12 +1018,11 @@ footer .footer-media-icons .social-icon .social-icon:hover {
 
 @media (min-width: 1200px) {
   h1 {
-    font-size: 5rem;
     text-transform: uppercase;
     color: #fff !important;
   }
   .welcome-text p {
-    font-size: 3rem;
+    font-size: 2.5rem;
     width: 650px;
   }
   .arrow {
