@@ -155,7 +155,7 @@ h2 {
 }
 
 .home .welcome .arrow a:hover {
-  color: #eae8e8;
+  color: #f6f7f7;
 }
 
 .offer {
@@ -199,7 +199,7 @@ h2 {
           flex-direction: column;
   top: 0;
   padding: 30px;
-  background-color: #eae8e8;
+  background-color: #f6f7f7;
   width: 100vw;
   height: 50vh;
   z-index: 50;
@@ -239,9 +239,9 @@ h2 {
   text-align: center;
   color: #fff;
   background-color: #000;
-  border-radius: 8px;
-  -webkit-box-shadow: 4px 4px 3px rgba(84, 84, 84, 0.4);
-          box-shadow: 4px 4px 3px rgba(84, 84, 84, 0.4);
+  border-radius: 10px;
+  -webkit-box-shadow: 10px 10px 3px -12px rgba(25, 25, 25, 0.2);
+          box-shadow: 10px 10px 3px -12px rgba(25, 25, 25, 0.2);
   overflow: hidden;
 }
 
@@ -264,7 +264,7 @@ h2 {
   background-color: #e5383b;
   margin-top: 20px;
   border: transparent;
-  border-radius: 15px;
+  border-radius: 8px;
   color: #fff;
   -webkit-box-shadow: 0 1px 5px #545454;
           box-shadow: 0 1px 5px #545454;
@@ -281,8 +281,11 @@ h2 {
 }
 
 .offer .white-space .offer-cards .card2-2 {
-  -webkit-box-shadow: 4px 4px 3px rgba(84, 84, 84, 0.4);
-          box-shadow: 4px 4px 3px rgba(84, 84, 84, 0.4);
+  -webkit-box-shadow: 10px 10px 3px -12px rgba(225, 221, 221, 0.2);
+          box-shadow: 10px 10px 3px -12px rgba(225, 221, 221, 0.2);
+  border-radius: 10px;
+  background-color: #fff;
+  z-index: 987654;
 }
 
 .offer .white-space .offer-cards .card2-2 i {
@@ -437,9 +440,10 @@ h2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border: 5px solid #161414;
   border-radius: 15px;
   background-color: #fff;
+  -webkit-box-shadow: 4px 5px 9px -2px rgba(66, 68, 90, 0.61);
+          box-shadow: 4px 5px 9px -2px rgba(66, 68, 90, 0.61);
 }
 
 .contact .wrapper .email-form p {
@@ -456,14 +460,14 @@ h2 {
   margin: 15px;
   border-radius: 5px;
   border: 2px solid #beb6b6;
-  background-color: #eae8e8;
+  background-color: #f6f7f7;
 }
 
 .contact .wrapper .email-form #message {
   resize: none;
   border-radius: 5px;
   border: 2px solid #beb6b6;
-  background-color: #eae8e8;
+  background-color: #f6f7f7;
 }
 
 .contact .wrapper .email-form button {
@@ -472,7 +476,7 @@ h2 {
   color: #fff;
   background-color: #e5383b;
   border: none;
-  border-radius: 15px;
+  border-radius: 8px;
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
@@ -573,12 +577,7 @@ footer .footer-media-icons .social-icon .social-icon:hover {
     padding: 250px 40px;
     height: 80vh;
     margin: 70px 10px 20px 10px;
-    color: #fff;
     font-size: 1.2rem;
-    background-color: #000;
-    border-radius: 15px;
-    -webkit-box-shadow: 3px 3px 1px #545454;
-            box-shadow: 3px 3px 1px #545454;
     width: 105vw;
     list-style-type: none;
     overflow: hidden;
@@ -590,7 +589,6 @@ footer .footer-media-icons .social-icon .social-icon:hover {
     background-color: #e5383b;
     padding: 5px 15px;
     margin-top: 20px;
-    border-radius: 15px;
     color: #fff;
     -webkit-transition: color 0.2s;
     transition: color 0.2s;
@@ -614,14 +612,10 @@ footer .footer-media-icons .social-icon .social-icon:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    background-color: #fff;
     padding: 30px 40px;
     height: 80vh;
     width: 105vw;
     margin: 10px 10px;
-    -webkit-box-shadow: 3px 3px 1px #545454;
-            box-shadow: 3px 3px 1px #545454;
-    border-radius: 15px;
     overflow: hidden;
   }
   .offer .card2-2 .card2-content {
@@ -708,12 +702,7 @@ footer .footer-media-icons .social-icon .social-icon:hover {
     height: 80vh;
     width: 105vw;
     margin: 70px 20px 20px 20px;
-    color: #fff;
     font-size: 1.4rem;
-    background-color: #000;
-    border-radius: 8px;
-    -webkit-box-shadow: 4px 4px 3px rgba(84, 84, 84, 0.4);
-            box-shadow: 4px 4px 3px rgba(84, 84, 84, 0.4);
     overflow: hidden;
   }
   .offer .white-space .offer-cards .card1 ul {
@@ -726,7 +715,6 @@ footer .footer-media-icons .social-icon .social-icon:hover {
     background-color: #e5383b;
     padding: 5px 15px;
     margin-top: 20px;
-    border-radius: 15px;
     color: #fff;
     -webkit-transition: color 0.2s;
     transition: color 0.2s;
@@ -750,13 +738,9 @@ footer .footer-media-icons .social-icon .social-icon:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    background-color: #fff;
     padding: 30px 50px;
     height: 80vh;
     width: 105vw;
-    -webkit-box-shadow: 4px 4px 3px rgba(84, 84, 84, 0.4);
-            box-shadow: 4px 4px 3px rgba(84, 84, 84, 0.4);
-    border-radius: 8px;
     overflow: hidden;
   }
   .offer .card2-2 .card2-content {
@@ -881,7 +865,6 @@ footer .footer-media-icons .social-icon .social-icon:hover {
     height: 50px;
     font-size: 2rem;
     margin-top: 20px;
-    border-radius: 15px;
     color: #fff;
   }
   .offer .offer-cards .card2-2 i {

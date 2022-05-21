@@ -169,7 +169,6 @@ h2 {
 		flex-direction: column;
 		top: 0;
 		padding: 30px;
-		// background-color: $pure-white;
 		background-color: $light-white;
 		width: 100vw;
 		height: 50vh;
@@ -181,9 +180,6 @@ h2 {
 			justify-content: space-around;
 			align-content: center;
 			flex-direction: column;
-			// height: 120%;
-			// bottom: -60%;
-			// border: 1px solid red;
 			list-style-type: none;
 			overflow: hidden;
 
@@ -193,11 +189,10 @@ h2 {
 				align-items: center;
 				flex-direction: column;
 				text-align: center;
-				// padding: 10px 50px;
 				color: $pure-white;
 				background-color: $black-color;
-				border-radius: 8px;
-				box-shadow: 4px 4px 3px rgba($grey-color, $alpha: 0.4);
+				border-radius: 10px;
+				box-shadow: 10px 10px 3px -12px rgba(25, 25, 25, 0.2);
 				overflow: hidden;
 
 				ul {
@@ -218,7 +213,7 @@ h2 {
 					background-color: $main-color;
 					margin-top: 20px;
 					border: transparent;
-					border-radius: 15px;
+					border-radius: 8px;
 					color: $pure-white;
 					box-shadow: 0 1px 5px $grey-color;
 					transition: color 0.2s;
@@ -233,8 +228,11 @@ h2 {
 			}
 
 			.card2-2 {
-				// overflow: auto;
-				box-shadow: 4px 4px 3px rgba($grey-color, $alpha: 0.4);
+				// box-shadow: 4px 5px 9px -2px rgba(66, 68, 90, 0.61);
+				box-shadow: 10px 10px 3px -12px rgba(225, 221, 221, 0.2);
+				border-radius: 10px;
+				background-color: $pure-white;
+				z-index: 987654;
 
 				i {
 					transition: color 0.2s;
@@ -375,9 +373,9 @@ h2 {
 			justify-content: center;
 			align-items: center;
 			flex-direction: column;
-			border: 5px solid $half-black;
 			border-radius: 15px;
 			background-color: $pure-white;
+			box-shadow: 4px 5px 9px -2px rgba(66, 68, 90, 0.61);
 
 			p {
 				margin-top: 15px;
@@ -413,7 +411,7 @@ h2 {
 				color: $pure-white;
 				background-color: $main-color;
 				border: none;
-				border-radius: 15px;
+				border-radius: 8px;
 				transition: 0.2s;
 			}
 
@@ -516,13 +514,7 @@ footer {
 					padding: 250px 40px;
 					height: 80vh;
 					margin: 70px 10px 20px 10px;
-					color: $pure-white;
 					font-size: 1.2rem;
-					background-color: $black-color;
-					border-radius: 15px;
-					box-shadow: 3px 3px 1px $grey-color;
-					// font-size: 1.5rem;
-					// width: 400px;
 					width: 105vw;
 					list-style-type: none;
 					overflow: hidden;
@@ -537,7 +529,6 @@ footer {
 						// height: 40px;
 						padding: 5px 15px;
 						margin-top: 20px;
-						border-radius: 15px;
 						color: $pure-white;
 						transition: color 0.2s;
 
@@ -557,13 +548,10 @@ footer {
 			justify-content: space-around;
 			align-items: center;
 			flex-direction: column;
-			background-color: $pure-white;
 			padding: 30px 40px;
 			height: 80vh;
 			width: 105vw;
 			margin: 10px 10px;
-			box-shadow: 3px 3px 1px $grey-color;
-			border-radius: 15px;
 			overflow: hidden;
 
 			.card2-content {
@@ -663,11 +651,7 @@ footer {
 					height: 80vh;
 					width: 105vw;
 					margin: 70px 20px 20px 20px;
-					color: $pure-white;
 					font-size: 1.4rem;
-					background-color: $black-color;
-					border-radius: 8px;
-					box-shadow: 4px 4px 3px rgba($grey-color, $alpha: 0.4);
 					overflow: hidden;
 
 					ul {
@@ -682,7 +666,6 @@ footer {
 						background-color: $main-color;
 						padding: 5px 15px;
 						margin-top: 20px;
-						border-radius: 15px;
 						color: $pure-white;
 						transition: color 0.2s;
 
@@ -702,13 +685,9 @@ footer {
 			justify-content: space-around;
 			align-items: center;
 			flex-direction: column;
-			background-color: $pure-white;
 			padding: 30px 50px;
 			height: 80vh;
 			width: 105vw;
-			// margin: 10px 10px;
-			box-shadow: 4px 4px 3px rgba($grey-color, $alpha: 0.4);
-			border-radius: 8px;
 			overflow: hidden;
 
 			.card2-content {
@@ -861,7 +840,6 @@ footer {
 					height: 50px;
 					font-size: 2rem;
 					margin-top: 20px;
-					border-radius: 15px;
 					color: $pure-white;
 				}
 			}
@@ -1097,7 +1075,6 @@ footer {
 					max-width: 500px;
 					margin: 30px 100px 30px 0;
 					padding: 0 20px;
-					// border: 1px solid red;
 
 					i {
 						font-size: 6rem;
