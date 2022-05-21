@@ -128,7 +128,6 @@ h2 {
 		.arrow {
 			position: absolute;
 			animation: arrow 0.9s 0.5s forwards;
-			bottom: 10%;
 
 			a {
 				color: $pure-white;
@@ -482,7 +481,9 @@ footer {
 		}
 	}
 	.arrow {
+		position: absolute;
 		font-size: 5rem;
+		bottom: 150px;
 	}
 
 	.offer {
@@ -622,6 +623,8 @@ footer {
 	}
 
 	.arrow {
+		position: absolute;
+		bottom: 150px;
 		font-size: 7rem;
 	}
 
@@ -768,6 +771,8 @@ footer {
 	}
 
 	.arrow {
+		position: absolute;
+		bottom: 150px;
 		font-size: 8rem;
 	}
 
@@ -805,6 +810,8 @@ footer {
 	}
 
 	.arrow {
+		position: absolute;
+		bottom: 150px;
 		font-size: 9rem;
 	}
 
@@ -948,6 +955,8 @@ footer {
 		}
 
 		.arrow {
+			position: absolute;
+			bottom: 250px;
 			font-size: 10rem;
 		}
 	}
@@ -1029,6 +1038,7 @@ footer {
 
 	.arrow {
 		font-size: 12rem;
+		bottom: 10%;
 	}
 
 	.offer {

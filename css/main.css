@@ -145,7 +145,6 @@ h2 {
   position: absolute;
   -webkit-animation: arrow 0.9s 0.5s forwards;
           animation: arrow 0.9s 0.5s forwards;
-  bottom: 10%;
 }
 
 .home .welcome .arrow a {
@@ -540,7 +539,9 @@ footer .footer-media-icons .social-icon .social-icon:hover {
     padding: 0 90px;
   }
   .arrow {
+    position: absolute;
     font-size: 5rem;
+    bottom: 150px;
   }
   .offer {
     -webkit-box-orient: vertical;
@@ -668,6 +669,8 @@ footer .footer-media-icons .social-icon .social-icon:hover {
     padding: 0 50px;
   }
   .arrow {
+    position: absolute;
+    bottom: 150px;
     font-size: 7rem;
   }
   .offer {
@@ -796,6 +799,8 @@ footer .footer-media-icons .social-icon .social-icon:hover {
     padding: 0 100px;
   }
   .arrow {
+    position: absolute;
+    bottom: 150px;
     font-size: 8rem;
   }
   .offer-cards {
@@ -832,6 +837,8 @@ footer .footer-media-icons .social-icon .social-icon:hover {
     font-size: 2rem;
   }
   .arrow {
+    position: absolute;
+    bottom: 150px;
     font-size: 9rem;
   }
   .offer {
@@ -941,6 +948,8 @@ footer .footer-media-icons .social-icon .social-icon:hover {
     width: 600px;
   }
   .home .arrow {
+    position: absolute;
+    bottom: 250px;
     font-size: 10rem;
   }
   .offer {
@@ -1010,6 +1019,7 @@ footer .footer-media-icons .social-icon .social-icon:hover {
   }
   .arrow {
     font-size: 12rem;
+    bottom: 10%;
   }
   .offer {
     height: 95vh;
